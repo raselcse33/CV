@@ -1,0 +1,159 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000019;
+    overflow: hidden;
+}
+/*.hide{
+    z-index: 7;
+    background-color: white;
+    height: 900px;
+    position: fixed;
+    top: 0px;
+    display: block;
+}*/
+/*#left{
+    width: 300px;
+    left: 0px;
+}*/
+/*#right{
+    width: 1000px;
+    left: 1300px;
+}*/
+.shootable {}
+#controls {
+    display: block;
+    margin-top: 500px;
+    color: gold;
+    padding-left: 100px;
+
+}
+
+#controls .heading {
+    width: 300px;
+    display: inline-block;
+}
+
+#lives {
+    padding-left: 40px;
+}
+
+#controls .buttons {
+    display: inline-block;
+}
+
+#controls img {
+    padding-left: 20px;
+}
+
+#controls li {
+    list-style: none;
+    padding: 15px;
+    font-size: 30px;
+}
+
+#controls h3 {
+    font-size: 50px;
+}
+
+#info {
+    padding-left: 20px;
+    background-color: #000019;
+    display: block;
+    color: gold;
+    font-family: fantasy;
+    font-size: 40px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    /*left: 300px;*/
+    top: 50px;
+    line-height: 30px;
+}
+#start, #game-over {
+    opacity: .8;
+    width: 100%;
+    height: 400px;
+    background-color: #000019;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    z-index: 7;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#start {
+  line-height: 400px;
+}
+
+#game-over {
+    color: red;
+    display: none;
+}
+
+#start:hover{
+    font-size: 35px;
+    color: gold;
+}
+#start:active{
+    color: black;
+}
+.explosion {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+#gameArea{
+    width: 1000px;
+    height: 400px;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    z-index: 5;
+}
+#player{
+    width: 20px;
+    height: 40px;
+    background-image: url("../images/player.png");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.bullet{
+    width: 20px;
+    height: 40px;
+    background-image: url("../images/bullet.png");
+    position: absolute;
+    display: inline-block;
+}
+.enemy{
+    width: 25px;
+    height: 50px;
+    background-image: url("../images/enemy.png");
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    z-index: 4;
+}
+#world{
+    height: 400px;
+    width: 7850px;
+    background-image: url("../images/gameArea.png");
+    position: fixed;
+    top: 100px;
+    animation-name: fly;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 3;
+}
+@keyframes fly {
+    0%   { left: 0px; }
+    100% { left: -5556px; }
+}
